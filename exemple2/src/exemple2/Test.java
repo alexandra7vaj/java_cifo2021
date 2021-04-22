@@ -32,9 +32,11 @@ public class Test {
 			
 			if (userType.equals("vip")) {
 				//scope number #3
-				
-				
 				// i have to code 25% discount
+			
+				
+				//scope number #9
+				
 				// print to screen
 				System.out.println("\nTicket:");
 				System.out.println("-------------------------\n");
@@ -43,23 +45,46 @@ public class Test {
 				System.out.println("Your total discout is:" + userBuy*25/100 );
 				System.out.println("Your should pay (with the discount): " + (userBuy - (userBuy * 25 / 100)) + "\n");
 			
-			} else {
-				//scope number #4
-				//System.out.println(userName + "is NOT a vip user");
+			
+			
+			} else if(userType.equals("regular")) {	
+				//scope number #7
+				// i have to code 15% discount
 				
 				System.out.println("\nTicket:");
 				System.out.println("-------------------------\n");
-				System.out.println(userName + " is NOT a vip user\n");
-				System.out.println("The amount of your buy is: " + userBuy);
-				System.out.println("Your discount is: " + "0%");
-				System.out.println("Your total discout is: " + "0");
-				System.out.println("Your should pay (with the discount): " + userBuy + "\n");
-			 }
-		  
-			// I am closing the while so also the while scope
-	}
-
-}
+				System.out.println("The amout of your buy is: " + userBuy);
+				System.out.println("Your discout is: " + "15%" );
+				System.out.println("Your total discout is:" + userBuy*15/100 );
+				System.out.println("Your should pay (with the discount): " + (userBuy - (userBuy * 15 / 100)) + "\n");
+			}
+			
+			
+					
+			 else if (userType.equals("new")) {	
+				//scope number #8
+				// i have to code 0% discount
+				
+				System.out.println("\nTicket:");
+				System.out.println("-------------------------\n");
+				System.out.println("The amout of your buy is: " + userBuy);
+				System.out.println("Your discout is: " + "0%" );
+				System.out.println("Your total discout is:" + userBuy*0 );
+				System.out.println("Your should pay (with the discount): " + (userBuy - (userBuy * 0)) + "\n");
+			
+			
+		 
+		 }
+				// if (userType.equals("is Not a vip user")) {
+			    //else if (userType.equals("is Not a vip user"))
+			
+				//scope number #4 
+			   // I am closing the while so also the while scope
+				
+			
+		 }			
+			
+	}		
 	public static void methodtotestscope() { 
 	    // scope number #5
 	   // here i don't see variables from other scopes
@@ -68,4 +93,4 @@ public class Test {
 	// userName <<<i don't see this variables from scope #4
 	} 
 	  
-  }
+	}
