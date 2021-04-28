@@ -3,8 +3,8 @@ package wordsoperations;
 import java.util.Scanner;
 
 public class Init {
-
-	public static void main(String[] args) {
+	
+  public static void main(String[] args) {
 
 		
 		Scanner reader = new Scanner (System.in);
@@ -14,15 +14,21 @@ public class Init {
 		//Operations.print(word);
 		//Operations.linebreak();
 		//Operations.printString(word);
-		Operations.printStringH(word);
-		Operations.printStringV(word);
-		Operations.printStringHDash(word);
-		Operations.printStringDiagonal(word);
-		Operations.printStringBackWards(word);
+		
+		//Operations.printStringH(word);
+		//Operations.printStringV(word);
+		//Operations.printStringHDash(word);
+		//Operations.printStringDiagonal(word);
+		//Operations.printStringBackWards(word);
+		
+		//Operations.operationsString(word);
+		Editing.subEditing (word);
+		
+		EmailManagment.createAccount(word);
 		
 		
 		
-		System.out.println("Bye bye my friend...");
+		System.out.println("\nBye bye my friend...");
 		
 		
 		

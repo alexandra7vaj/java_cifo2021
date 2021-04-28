@@ -4,6 +4,7 @@ public class Editing {
 
 	public static void subEditing(String wordtoEdit) {
 		                //buscador
+	  
 	  Operations.print("Substring from 3: ");
 	  Operations.print("wordtoEdit.substring(3)");
 	  Operations.linebreak();
