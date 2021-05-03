@@ -47,6 +47,6 @@ public class Utils {
 
 		return password;
 	}
+  }
 
-}
-© 2021 GitHub, Inc.
+

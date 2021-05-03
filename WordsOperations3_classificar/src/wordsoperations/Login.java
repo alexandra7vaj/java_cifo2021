@@ -1,10 +1,45 @@
 package wordsoperations;
 
+import java.util.Scanner;
+
 public class Login {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static boolean validateAccount(Scanner reader, String user, String password) {
+		//System.out.println(user);
+		//System.out.println(password);
+		
+		int count = 1;
+				String userConsole;
+				String passwordConsole;
+				System.out.println("\nLogin:");
+				
+		do {
+			
+			System.out.println("\nEnter Username: ");
+			userConsole = reader.next();
+			
+			System.out.println("\nEnter Username: ");
+			passwordConsole = reader.next();
+			
+			if (userConsole.equals(user) && passwordConsole.equals(password)){
+				
+			} else if (passwordConsole.equals(password)) {
+			       System.out.println("Invalid Password!");
+			       
+			} else if (passwordConsole.equals(password)) {
+			       System.out.println("Invalid Username!");
+			       
+			} else {
+				System.out.println("Invalid Username & Password!");
+			}
+			
+            if (count == 4) System.out.println("Account blocked!");
+			
+		    } while (count < 4);
+		
+		
 
+		   return false;
 	}
 
 }
